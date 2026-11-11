@@ -446,8 +446,10 @@ nav .nav-inner button{white-space:nowrap;flex-shrink:0}
 <style id="prose-line-breaks">
 .anomaly-lead p,.anomaly-card p,.anomaly-warning{white-space:pre-line!important;word-break:normal;overflow-wrap:break-word}
 </style>
-<style id="popup-no-blue-border">
-#entityPopupLayer .entity-error-window{border:0!important;box-shadow:0 18px 60px #0009!important}
+<style id="popup-finished-frame">
+#entityPopupLayer .entity-error-window{display:flex;flex-direction:column;border:1px solid #10141b!important;border-radius:6px!important;overflow:hidden!important;background:#f3f5f8;background-clip:padding-box;box-shadow:0 14px 36px #0006!important;isolation:isolate}
+#entityPopupLayer .entity-error-title{flex:0 0 auto;border-radius:0!important;border-bottom:1px solid #10141b;min-height:48px;box-sizing:border-box}
+#entityPopupLayer .entity-error-body{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;border-radius:0!important;background:#f3f5f8;scrollbar-width:thin;scrollbar-color:#69717c #f3f5f8}
 </style>
 <style id="duplicate-session-effects">
 #dualSessionIntro{position:fixed;inset:0;z-index:100050;display:grid;place-items:center;background:#020406;color:#cad6db;padding:24px;font-family:Consolas,'Malgun Gothic',monospace;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}#dualSessionIntro.active{opacity:1;visibility:visible}.dual-terminal{width:min(480px,100%);border-left:2px solid #ac354e;padding:22px;animation:dualTerminalIn .5s ease both}.dual-terminal small{font-size:10px;color:#a4aeb6;letter-spacing:.14em}.dual-terminal h2{font-size:clamp(24px,6vw,36px);color:#e3a0ad;margin:16px 0}.dual-terminal p{font-size:12px;line-height:2;color:#7f969e}.dual-terminal p span{display:block;color:#ca687e}.dual-terminal .dual-cursor{display:inline-block;width:7px;height:13px;background:#b86275;animation:dualCursor 1.2s steps(1,end) infinite}
